@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 flask = "*"
-flask-mail = "*"
+flask-cors = "*"
 
 [dev-packages]
 
