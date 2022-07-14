@@ -79,6 +79,6 @@ trên một repository giúp giải quyết nhiều nhiệm vụ cùng lúc. Khi
 -Tạo kết nối với server: *git remote add origin [url]*.  
 -Tải source từ local lên server: *git push -u origin [namebranch]*.
 Xoá:
--Đổi qua 1 nhánh khác: git checkout (-b) [NameBranch]*.
--Xoá tại local: git branch -d [NameBranch]*.
--Xoá trên github: git push origin --delete [NameBranch]*.
+-Đổi qua 1 nhánh khác: git checkout (-b) [NameBranch]  
+-Xoá tại local: git branch -d [NameBranch]  
+-Xoá trên github: git push origin --delete [NameBranch]  
