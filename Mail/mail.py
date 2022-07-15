@@ -19,8 +19,10 @@ mail = Mail(app)
 @app.route('/', methods= ['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        msg = Message("Nhiệm vụ thứ 4", sender='dothanhdatk18@gmail.com', recipients=['vutruong5438@gmail.com', 'thopn95@gmail.com'])
-        msg.body = "Hello 2 a, e nộp bài gửi mail"
+        NameTitle = request.form["Title"]
+        Email = request.form["Email"]
+        msg = Message(NameTitle, sender='dothanhdatk18@gmail.com', recipients=[Email])
+        msg.body = request.form["Body"]
         mail.send(msg)
         return "Sent email"
     return render_template('index.html')
